@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="./js/script.js"></script>
+</head>
+
+<body onload="carregarTabela()">
+
+    <table class="table">
+        <tr>
+            <td><button class="btn btn-primary" onclick="window.location.href='listarSegmento.html'">Ver Produtos por Segmento</button></td>
+            <td><button class="btn btn-primary" onclick="window.location.href='pesquisarProduto.html'">Pesquisar Produto</button></td>
+            <td><button class="btn btn-primary" onclick="window.location.href='carrinho.html'">Ver Carrinho</button></td>
+        </tr>
+    </table>
+
+    <hr>
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <td>Produto</td>
+                <td>Segmento</td>
+                <td>Preço</td>
+                <td>Estoque</td>
+                <td>Carrinho</td>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider"></tbody>
+    </table>
+
+</body>
+
+</html>
