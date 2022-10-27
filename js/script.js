@@ -621,6 +621,7 @@ function adicionarProdutoAoCarrinho(idProduto) {
         }
 
         localStorage.setItem('carrinho', JSON.stringify(carrinho))
+        window.location.reload()
     }
 }
 
@@ -634,6 +635,7 @@ function removerProdutoDoCarrinho(idProduto) {
                 carrinho.splice(i, 1)
             }
             localStorage.setItem('carrinho', JSON.stringify(carrinho))
+            window.location.reload()
             return
         }
     }
